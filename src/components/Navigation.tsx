@@ -11,7 +11,7 @@ const Navigation = () => {
     { label: "Projects", href: "/projects" },
     { label: "Residential", href: "/residential" },
     { label: "Commercial", href: "/commercial" },
-    { label: "About", href: "/about" },
+    { label: "Company Profile", href: "/company-profile" },
     { label: "Contact", href: "/contact" },
   ];
 
@@ -26,7 +26,7 @@ const Navigation = () => {
             <div className="w-8 h-8 bg-gradient-hero rounded-lg flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-lg">E</span>
             </div>
-            <span className="text-xl font-bold text-foreground">Excel Marketing</span>
+            <span className="text-xl font-bold text-foreground">Excel Marketing Pvt Ltd</span>
           </Link>
 
           {/* Desktop Navigation */}

@@ -17,7 +17,7 @@ const Footer = () => {
                 <div className="w-8 h-8 bg-gradient-hero rounded-lg flex items-center justify-center">
                   <span className="text-primary-foreground font-bold text-lg">E</span>
                 </div>
-                <span className="text-xl font-bold">Excel Marketing</span>
+                <span className="text-xl font-bold">Excel Marketing Pvt Ltd</span>
               </div>
               <p className="text-background/80 text-sm leading-relaxed">
                 Your trusted partner in finding premium residential and commercial properties 
@@ -40,7 +40,7 @@ const Footer = () => {
                   { label: "All Projects", href: "/projects" },
                   { label: "Residential", href: "/residential" },
                   { label: "Commercial", href: "/commercial" },
-                  { label: "About Us", href: "/about" },
+                  { label: "Company Profile", href: "/company-profile" },
                   { label: "Contact", href: "/contact" },
                 ].map((link) => (
                   <Link
@@ -79,15 +79,19 @@ const Footer = () => {
               <div className="space-y-3">
                 <div className="flex items-center space-x-2 text-sm text-background/80">
                   <Phone className="h-4 w-4" />
-                  <span>+92 300 1234567</span>
+                  <a href="tel:03348737244" className="hover:text-background transition-colors">
+                    03348737244
+                  </a>
                 </div>
                 <div className="flex items-center space-x-2 text-sm text-background/80">
                   <Mail className="h-4 w-4" />
-                  <span>info@excelmarketing.pk</span>
+                  <a href="mailto:waheedfarooki@gmail.com" className="hover:text-background transition-colors">
+                    waheedfarooki@gmail.com
+                  </a>
                 </div>
                 <div className="flex items-start space-x-2 text-sm text-background/80">
                   <MapPin className="h-4 w-4 mt-0.5" />
-                  <span>Main Boulevard, DHA Phase 5, Lahore</span>
+                  <span>Pakistan</span>
                 </div>
               </div>
               
