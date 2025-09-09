@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
-import { Facebook, Twitter, Instagram, Linkedin, Phone, Mail, MapPin } from "lucide-react";
+import { Facebook, Twitter, Instagram, Linkedin, Mail, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -15,19 +15,31 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
                 <div className="w-8 h-8 bg-gradient-hero rounded-lg flex items-center justify-center">
-                  <span className="text-primary-foreground font-bold text-lg">E</span>
+                  <span className="text-background font-bold text-lg">E</span>
                 </div>
-                <span className="text-xl font-bold">Excel Marketing Pvt Ltd</span>
+                <span className="text-xl font-bold">Excel Marketing</span>
               </div>
               <p className="text-background/80 text-sm leading-relaxed">
-                Your trusted partner in finding premium residential and commercial properties 
-                across Pakistan. Making property dreams come true since 2008.
+                Your trusted partner in real estate. We provide comprehensive property solutions
+                with expertise in buying, selling, and development across Pakistan.
               </p>
+              
+              {/* Social Links */}
               <div className="flex space-x-4">
-                {[Facebook, Twitter, Instagram, Linkedin].map((Icon, index) => (
-                  <Button key={index} variant="ghost" size="icon" className="text-background/60 hover:text-background hover:bg-background/10">
-                    <Icon className="h-4 w-4" />
-                  </Button>
+                {[
+                  { icon: Facebook, href: "#", label: "Facebook" },
+                  { icon: Twitter, href: "#", label: "Twitter" },
+                  { icon: Instagram, href: "#", label: "Instagram" },
+                  { icon: Linkedin, href: "#", label: "LinkedIn" },
+                ].map(({ icon: Icon, href, label }) => (
+                  <a
+                    key={label}
+                    href={href}
+                    className="w-10 h-10 bg-background/10 rounded-lg flex items-center justify-center hover:bg-background/20 transition-colors"
+                    aria-label={label}
+                  >
+                    <Icon className="h-5 w-5" />
+                  </a>
                 ))}
               </div>
             </div>
@@ -37,16 +49,15 @@ const Footer = () => {
               <h3 className="text-lg font-semibold">Quick Links</h3>
               <div className="space-y-2">
                 {[
-                  { label: "All Projects", href: "/projects" },
-                  { label: "Residential", href: "/residential" },
-                  { label: "Commercial", href: "/commercial" },
+                  { label: "Projects", href: "/projects" },
                   { label: "Company Profile", href: "/company-profile" },
                   { label: "Contact", href: "/contact" },
+                  { label: "About Us", href: "/company-profile" },
                 ].map((link) => (
                   <Link
-                    key={link.href}
+                    key={link.label}
                     to={link.href}
-                    className="block text-background/80 hover:text-background transition-smooth text-sm"
+                    className="block text-background/80 hover:text-background transition-colors text-sm"
                   >
                     {link.label}
                   </Link>
@@ -59,9 +70,8 @@ const Footer = () => {
               <h3 className="text-lg font-semibold">Our Services</h3>
               <div className="space-y-2">
                 {[
-                  "Property Sales",
-                  "Real Estate Investment",
-                  "Property Management",
+                  "Property Investment",
+                  "Real Estate Consultation", 
                   "Legal Documentation",
                   "Site Visits & Tours",
                   "Market Analysis",
@@ -78,15 +88,9 @@ const Footer = () => {
               <h3 className="text-lg font-semibold">Stay Connected</h3>
               <div className="space-y-3">
                 <div className="flex items-center space-x-2 text-sm text-background/80">
-                  <Phone className="h-4 w-4" />
-                  <a href="tel:03348737244" className="hover:text-background transition-colors">
-                    03348737244
-                  </a>
-                </div>
-                <div className="flex items-center space-x-2 text-sm text-background/80">
                   <Mail className="h-4 w-4" />
-                  <a href="mailto:waheedfarooki@gmail.com" className="hover:text-background transition-colors">
-                    waheedfarooki@gmail.com
+                  <a href="mailto:excelmarketingpk@gmail.com" className="hover:text-background transition-colors">
+                    excelmarketingpk@gmail.com
                   </a>
                 </div>
                 <div className="flex items-start space-x-2 text-sm text-background/80">
@@ -103,7 +107,7 @@ const Footer = () => {
                     placeholder="Your email"
                     className="bg-background/10 border-background/20 text-background placeholder:text-background/60"
                   />
-                  <Button variant="luxury" size="sm">
+                  <Button variant="secondary" size="sm">
                     Subscribe
                   </Button>
                 </div>
@@ -114,22 +118,22 @@ const Footer = () => {
 
         <Separator className="bg-background/20" />
 
-        {/* Bottom Footer */}
+        {/* Footer Bottom */}
         <div className="py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-sm text-background/60">
-              © 2024 Excel Marketing Pvt. Ltd. All rights reserved.
+              © 2024 Excel Marketing Pvt Ltd. All rights reserved.
             </div>
-            <div className="flex space-x-6 text-sm text-background/60">
-              <Link to="/privacy" className="hover:text-background transition-smooth">
+            <div className="flex space-x-6 text-sm">
+              <a href="#" className="text-background/60 hover:text-background transition-colors">
                 Privacy Policy
-              </Link>
-              <Link to="/terms" className="hover:text-background transition-smooth">
+              </a>
+              <a href="#" className="text-background/60 hover:text-background transition-colors">
                 Terms of Service
-              </Link>
-              <Link to="/sitemap" className="hover:text-background transition-smooth">
-                Sitemap
-              </Link>
+              </a>
+              <a href="#" className="text-background/60 hover:text-background transition-colors">
+                Cookie Policy
+              </a>
             </div>
           </div>
         </div>

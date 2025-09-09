@@ -6,27 +6,17 @@ import { Link } from 'react-router-dom';
 import { projectsData } from '@/data/projects';
 
 const FeaturedLocationsWidget = () => {
-  // Group projects by city and get top projects for major cities
+  // Group projects by city and get top projects for Islamabad and Rawalpindi only
   const featuredCities = [
     {
       city: 'Islamabad',
       projects: projectsData.filter(p => p.city === 'Islamabad'),
-      count: '45+'
+      count: projectsData.filter(p => p.city === 'Islamabad').length + '+'
     },
     {
-      city: 'Lahore', 
-      projects: projectsData.filter(p => p.city === 'Lahore'),
-      count: '120+'
-    },
-    {
-      city: 'Wah',
-      projects: projectsData.filter(p => p.city === 'Wah'),
-      count: '25+'
-    },
-    {
-      city: 'Karachi',
-      projects: [], // No projects in data yet, but placeholder
-      count: '80+'
+      city: 'Rawalpindi', 
+      projects: [], // Add Rawalpindi projects when available
+      count: '5+'
     }
   ];
 
@@ -39,15 +29,15 @@ const FeaturedLocationsWidget = () => {
             Top Locations
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Featured Locations
+            Islamabad & Rawalpindi Properties
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Explore our premium properties across Pakistan's major cities
+            Explore our premium properties exclusively in Islamabad and Rawalpindi
           </p>
         </div>
 
         {/* Cities Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-8">
           {featuredCities.map((cityData, index) => {
             const topProject = cityData.projects[0]; // Get the first project as featured
             

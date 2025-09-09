@@ -14,11 +14,13 @@ const Projects = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCity, setSelectedCity] = useState<string>('all');
   const [selectedStatus, setSelectedStatus] = useState<string>('all');
+  const [selectedType, setSelectedType] = useState<string>('all');
   const [selectedDeveloper, setSelectedDeveloper] = useState<string>('all');
 
   // Get unique values for filters
   const cities = Array.from(new Set(projectsData.map(p => p.city)));
   const statuses = Array.from(new Set(projectsData.map(p => p.status)));
+  const types = Array.from(new Set(projectsData.map(p => p.type)));
   const developers = Array.from(new Set(projectsData.map(p => p.developer)));
 
   // Filter projects
@@ -29,15 +31,17 @@ const Projects = () => {
     
     const matchesCity = selectedCity === 'all' || project.city === selectedCity;
     const matchesStatus = selectedStatus === 'all' || project.status === selectedStatus;
+    const matchesType = selectedType === 'all' || project.type === selectedType;
     const matchesDeveloper = selectedDeveloper === 'all' || project.developer === selectedDeveloper;
 
-    return matchesSearch && matchesCity && matchesStatus && matchesDeveloper;
+    return matchesSearch && matchesCity && matchesStatus && matchesType && matchesDeveloper;
   });
 
   const clearFilters = () => {
     setSearchTerm('');
     setSelectedCity('all');
     setSelectedStatus('all');
+    setSelectedType('all');
     setSelectedDeveloper('all');
   };
 
@@ -46,15 +50,15 @@ const Projects = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-gradient-hero py-20 text-primary-foreground">
+      <section className="bg-gradient-to-br from-blue-600 to-blue-800 py-20 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <Badge variant="outline" className="mb-6 text-primary-foreground border-primary-foreground/30">
+          <Badge variant="outline" className="mb-6 text-white border-white/30 bg-white/10">
             Property Portfolio
           </Badge>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
             Discover Premium Projects
           </h1>
-          <p className="text-xl md:text-2xl text-primary-foreground/90 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto">
             Explore our carefully curated selection of residential and commercial developments 
             across Pakistan's prime locations
           </p>
@@ -62,29 +66,29 @@ const Projects = () => {
       </section>
 
       {/* Filters Section */}
-      <section className="py-8 bg-background border-b">
+      <section className="py-8 bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-4 items-center justify-between">
             {/* Search */}
             <div className="relative flex-1 max-w-md">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-500" />
               <Input
                 placeholder="Search projects, locations, developers..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="pl-10"
+                className="pl-10 border-gray-300 text-gray-900"
               />
             </div>
 
             {/* Filters */}
             <div className="flex flex-wrap gap-3 items-center">
               <div className="flex items-center space-x-2">
-                <Filter className="h-4 w-4 text-muted-foreground" />
-                <span className="text-sm font-medium">Filter by:</span>
+                <Filter className="h-4 w-4 text-gray-500" />
+                <span className="text-sm font-medium text-gray-700">Filter by:</span>
               </div>
               
               <Select value={selectedCity} onValueChange={setSelectedCity}>
-                <SelectTrigger className="w-32">
+                <SelectTrigger className="w-32 border-gray-300">
                   <SelectValue placeholder="City" />
                 </SelectTrigger>
                 <SelectContent>
@@ -95,8 +99,20 @@ const Projects = () => {
                 </SelectContent>
               </Select>
 
+              <Select value={selectedType} onValueChange={setSelectedType}>
+                <SelectTrigger className="w-40 border-gray-300">
+                  <SelectValue placeholder="Type" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="all">All Types</SelectItem>
+                  {types.map(type => (
+                    <SelectItem key={type} value={type}>{type}</SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+
               <Select value={selectedStatus} onValueChange={setSelectedStatus}>
-                <SelectTrigger className="w-40">
+                <SelectTrigger className="w-40 border-gray-300">
                   <SelectValue placeholder="Status" />
                 </SelectTrigger>
                 <SelectContent>
@@ -110,7 +126,7 @@ const Projects = () => {
               </Select>
 
               <Select value={selectedDeveloper} onValueChange={setSelectedDeveloper}>
-                <SelectTrigger className="w-48">
+                <SelectTrigger className="w-48 border-gray-300">
                   <SelectValue placeholder="Developer" />
                 </SelectTrigger>
                 <SelectContent>
@@ -121,8 +137,8 @@ const Projects = () => {
                 </SelectContent>
               </Select>
 
-              {(searchTerm || selectedCity !== 'all' || selectedStatus !== 'all' || selectedDeveloper !== 'all') && (
-                <Button variant="outline" size="sm" onClick={clearFilters}>
+              {(searchTerm || selectedCity !== 'all' || selectedStatus !== 'all' || selectedType !== 'all' || selectedDeveloper !== 'all') && (
+                <Button variant="outline" size="sm" onClick={clearFilters} className="border-gray-300 text-gray-700">
                   Clear Filters
                 </Button>
               )}
@@ -132,11 +148,11 @@ const Projects = () => {
       </section>
 
       {/* Projects Grid */}
-      <section className="py-16">
+      <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Results Info */}
           <div className="mb-8">
-            <p className="text-muted-foreground">
+            <p className="text-gray-600 font-medium">
               Showing {filteredProjects.length} of {projectsData.length} projects
             </p>
           </div>
@@ -150,11 +166,11 @@ const Projects = () => {
             </div>
           ) : (
             <div className="text-center py-16">
-              <h3 className="text-xl font-semibold mb-4">No projects found</h3>
-              <p className="text-muted-foreground mb-6">
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">No projects found</h3>
+              <p className="text-gray-600 mb-6">
                 Try adjusting your search terms or filters to find what you're looking for.
               </p>
-              <Button variant="outline" onClick={clearFilters}>
+              <Button variant="outline" onClick={clearFilters} className="border-gray-300 text-gray-700">
                 Clear All Filters
               </Button>
             </div>

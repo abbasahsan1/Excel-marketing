@@ -36,7 +36,7 @@ describe('CompanyProfile Integration Test', () => {
     );
 
     expect(screen.getByText('03348737244')).toBeDefined();
-    expect(screen.getByText('waheedfarooki@gmail.com')).toBeDefined();
+    expect(screen.getByText('excelmarketingpk@gmail.com')).toBeDefined();
   });
 
   it('shows director information', () => {

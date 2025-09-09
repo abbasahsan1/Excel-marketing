@@ -305,11 +305,11 @@ const ProjectDetailPage = () => {
                       <span className="font-medium">03348737244</span>
                     </a>
                     <a
-                      href="mailto:waheedfarooki@gmail.com"
+                      href="mailto:excelmarketingpk@gmail.com"
                       className="flex items-center space-x-3 p-3 border rounded-lg hover:bg-muted/50 transition-colors"
                     >
                       <Mail className="h-4 w-4 text-primary" />
-                      <span className="font-medium">waheedfarooki@gmail.com</span>
+                      <span className="font-medium">excelmarketingpk@gmail.com</span>
                     </a>
                   </div>
                   <Button className="w-full" size="lg">

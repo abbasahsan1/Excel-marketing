@@ -6,33 +6,17 @@ export const projectsData: Project[] = [
     developer: 'Future Development Holdings (FDH)',
     name: 'Capital Smart City',
     slug: 'capital-smart-city',
-    short_desc: "Pakistan's first smart city with cutting-edge technology and sustainable infrastructure",
+    type: 'Residential', // Added property type
+    short_desc: "Pakistan's first smart city with cutting-edge technology and sustainable infrastructure in Islamabad",
     meta_desc: 'Capital Smart City - Pakistan\'s first smart city offering residential plots with modern amenities, smart infrastructure, and sustainable development in Islamabad.',
-    long_desc: `Capital Smart City represents the future of urban living in Pakistan. As the country's first smart city, it combines cutting-edge technology with sustainable development practices. Located on the main GT Road near Islamabad, this revolutionary project offers residents a lifestyle that seamlessly integrates modern conveniences with environmental consciousness.
+    long_desc: `Capital Smart City represents the future of urban living in Islamabad. As Pakistan's first smart city, it combines cutting-edge technology with sustainable development practices. Located on the main GT Road near Islamabad, this revolutionary project offers residents a lifestyle that seamlessly integrates modern conveniences with environmental consciousness.
 
-The city features smart home automation, fiber optic connectivity, renewable energy systems, and intelligent traffic management. With its prime location just 9.2 km from New Islamabad International Airport, Capital Smart City provides excellent connectivity while maintaining a peaceful, green environment.
-
-The development includes residential plots ranging from 5 marla to 2 kanal, commercial areas, educational institutions, healthcare facilities, and recreational spaces. Every aspect of the city is designed with sustainability in mind, from rainwater harvesting systems to solar energy infrastructure.`,
+The city features smart home automation, fiber optic connectivity, renewable energy systems, and intelligent traffic management. With its prime location just 9.2 km from New Islamabad International Airport, Capital Smart City provides excellent connectivity while maintaining a peaceful, green environment.`,
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1515263487990-61b07816b324?w=800&h=600&fit=crop&q=80',
-        source: 'turn0image0',
+        url: 'https://images.unsplash.com/photo-1542396601-dca920ea2807?w=600&h=400&fit=crop&crop=building',
+        source: 'capital-smart-city',
         alt: 'Capital Smart City aerial view'
-      },
-      {
-        url: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=600&fit=crop&q=80',
-        source: 'turn0image1',
-        alt: 'Capital Smart City central plaza'
-      },
-      {
-        url: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop&q=80',
-        source: 'turn0image3',
-        alt: 'Capital Smart City smart infrastructure'
-      },
-      {
-        url: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&h=600&fit=crop&q=80',
-        source: 'turn0image6',
-        alt: 'Capital Smart City connectivity'
       }
     ],
     status: 'development',
@@ -43,11 +27,7 @@ The development includes residential plots ranging from 5 marla to 2 kanal, comm
       'Solar Energy System',
       'Intelligent Traffic Management',
       'Green Building Standards',
-      'Smart Water Management',
-      'Electric Vehicle Charging',
-      'Digital Security Systems',
-      'Smart Street Lighting',
-      'Waste Management System'
+      'Smart Water Management'
     ],
     cta_links: {
       details: '/projects/capital-smart-city',
@@ -55,186 +35,129 @@ The development includes residential plots ranging from 5 marla to 2 kanal, comm
       plan: '#payment-plan'
     },
     map_coords: {
-      lat: 33.5651,
-      lng: 73.0169
+      lat: 33.6844,
+      lng: 73.0479
     },
     source_urls: [
-      'https://capitalsmartcity.pk',
-      'https://fdh.com.pk'
+      'https://capitalsmartcity.pk'
     ],
     location: 'GT Road, Islamabad',
     city: 'Islamabad'
   },
   {
-    id: 'bahria-town',
+    id: 'bahria-town-rawalpindi',
     developer: 'Bahria Town',
-    name: 'Bahria Town',
-    slug: 'bahria-town',
-    short_desc: 'Premium gated community with world-class amenities and modern infrastructure',
-    meta_desc: 'Bahria Town - Pakistan\'s largest private real estate developer offering luxury residential and commercial properties with international standards.',
-    long_desc: `Bahria Town stands as Pakistan's most prestigious and largest private real estate development. With locations across major cities, Bahria Town has redefined urban living standards in Pakistan through its commitment to quality, security, and modern amenities.
+    name: 'Bahria Town Rawalpindi',
+    slug: 'bahria-town-rawalpindi',
+    type: 'Residential',
+    short_desc: 'Pakistan\'s largest private development with international standards and complete facilities',
+    meta_desc: 'Bahria Town Rawalpindi - Premium residential community with golf course, shopping mall, international school and world-class amenities.',
+    long_desc: `Bahria Town Rawalpindi is Pakistan's largest privately developed residential community, offering international living standards with comprehensive facilities. This mega project spans thousands of acres and provides residents with a complete lifestyle solution including residential plots, villas, commercial areas, and recreational facilities.
 
-Each Bahria Town project features international-standard infrastructure, including wide roads, underground utilities, 24/7 security, healthcare facilities, educational institutions, and commercial areas. The development prioritizes green spaces with beautifully landscaped parks, golf courses, and recreational facilities.
-
-Bahria Town offers a complete lifestyle solution with shopping malls, restaurants, entertainment venues, and sports facilities. The community is designed to provide residents with everything they need within a secure, well-maintained environment that rivals international standards.`,
+The development features a championship golf course, international school, shopping mall, hospital complex, and numerous parks. With its gated community concept and 24/7 security, Bahria Town ensures a safe and comfortable living environment for families.`,
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop&q=80',
-        source: 'turn1image4',
-        alt: 'Bahria Town entrance gate'
-      },
-      {
-        url: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop&q=80',
-        source: 'turn1image3',
-        alt: 'Bahria Town residential area'
-      },
-      {
-        url: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&h=600&fit=crop&q=80',
-        source: 'turn1image2',
-        alt: 'Bahria Town amenities'
-      },
-      {
-        url: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=600&fit=crop&q=80',
-        source: 'turn1image8',
-        alt: 'Bahria Town community center'
+        url: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&h=400&fit=crop&crop=building',
+        source: 'bahria-town',
+        alt: 'Bahria Town Rawalpindi main entrance'
       }
     ],
-    status: 'available',
-    plot_sizes: ['5 Marla', '8 Marla', '10 Marla', '1 Kanal', '2 Kanal', '4 Kanal'],
+    status: 'developed',
+    plot_sizes: ['5 Marla', '10 Marla', '1 Kanal', '2 Kanal', '4 Kanal'],
     features: [
-      '24/7 Gated Security',
-      'International Golf Course',
-      'Shopping Malls',
-      'International Schools',
-      'Healthcare Facilities',
-      'Underground Utilities',
-      'Wide Roads Network',
-      'Landscaped Parks',
-      'Sports Complexes',
-      'Community Centers'
+      'Golf Course',
+      'Shopping Mall',
+      'International School',
+      'Hospital Complex',
+      '24/7 Security',
+      'Gated Community',
+      'Parks & Recreation',
+      'Mosque & Community Center'
     ],
     cta_links: {
-      details: '/projects/bahria-town',
+      details: '/projects/bahria-town-rawalpindi',
       book: '#contact',
       plan: '#payment-plan'
     },
     map_coords: {
-      lat: 33.5138,
-      lng: 73.1358
+      lat: 33.5205,
+      lng: 73.1363
     },
     source_urls: [
-      'https://bahriatown.com',
-      'https://bahria.pk'
+      'https://bahriatown.com'
     ],
-    location: 'Multiple Locations',
-    city: 'Lahore'
+    location: 'Bahria Town, Rawalpindi',
+    city: 'Rawalpindi'
   },
   {
-    id: 'dha',
-    developer: 'Defence Housing Authority',
-    name: 'DHA',
-    slug: 'dha',
-    short_desc: 'Pakistan\'s most trusted housing authority with premium residential developments',
-    meta_desc: 'DHA - Defence Housing Authority offers premium residential plots and properties with excellent infrastructure and prime locations across Pakistan.',
-    long_desc: `Defence Housing Authority (DHA) is Pakistan's most trusted and prestigious housing authority, known for developing premium residential communities that set the standard for quality and reliability. With over five decades of experience, DHA has consistently delivered projects that appreciate in value and provide residents with a superior living experience.
+    id: 'dha-islamabad',
+    developer: 'Defense Housing Authority',
+    name: 'DHA Islamabad',
+    slug: 'dha-islamabad',
+    type: 'Residential',
+    short_desc: 'Defense Housing Authority\'s premium development with military-standard security and infrastructure',
+    meta_desc: 'DHA Islamabad - Premium residential plots with military-standard security, modern infrastructure and prime location in Islamabad.',
+    long_desc: `DHA Islamabad offers premium residential living with military-standard security and world-class infrastructure. Developed by the Defense Housing Authority, this project ensures the highest quality of construction and amenities for residents.
 
-DHA developments are characterized by excellent infrastructure, strategic locations, and comprehensive planning. Each phase is carefully designed with wide roads, proper drainage systems, parks, commercial areas, and community facilities. The authority maintains strict quality standards and ensures timely delivery of utilities and services.
-
-DHA properties are considered among the most secure investments in Pakistan's real estate market. The authority's reputation for transparency, quality construction, and professional management makes DHA the preferred choice for discerning buyers and investors.`,
+Located in prime areas of Islamabad, DHA provides excellent connectivity to major business districts, educational institutions, and commercial centers. The development features wide roads, modern utilities, parks, commercial areas, and community facilities designed to meet international standards.`,
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&h=600&fit=crop&q=80',
-        source: 'turn5image4',
-        alt: 'DHA main boulevard'
-      },
-      {
-        url: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&h=600&fit=crop&q=80',
-        source: 'turn5image2',
-        alt: 'DHA residential sector'
-      },
-      {
-        url: 'https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800&h=600&fit=crop&q=80',
-        source: 'turn5image10',
-        alt: 'DHA commercial area'
-      },
-      {
-        url: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&h=600&fit=crop&q=80',
-        source: 'turn5image0',
-        alt: 'DHA amenities'
+        url: 'https://images.unsplash.com/photo-1518640467707-6811f4a6ab73?w=600&h=400&fit=crop&crop=building',
+        source: 'dha-islamabad',
+        alt: 'DHA Islamabad residential area'
       }
     ],
-    status: 'available',
+    status: 'developed',
     plot_sizes: ['5 Marla', '10 Marla', '1 Kanal', '2 Kanal'],
     features: [
+      'Military-Standard Security',
       'Prime Location',
-      'Excellent Infrastructure',
-      'High Security',
-      'Planned Development',
+      'Modern Infrastructure',
+      'Wide Roads',
+      'Underground Utilities',
       'Commercial Areas',
-      'Educational Institutions',
-      'Healthcare Facilities',
-      'Parks & Recreation',
-      'Reliable Utilities',
-      'Investment Security'
+      'Parks & Playgrounds',
+      'Community Mosque'
     ],
     cta_links: {
-      details: '/projects/dha',
+      details: '/projects/dha-islamabad',
       book: '#contact',
       plan: '#payment-plan'
     },
     map_coords: {
-      lat: 31.4697,
-      lng: 74.4056
+      lat: 33.6073,
+      lng: 73.0515
     },
     source_urls: [
-      'https://dhalahore.org',
       'https://dha.gov.pk'
     ],
-    location: 'Multiple Phases',
-    city: 'Lahore'
+    location: 'DHA, Islamabad',
+    city: 'Islamabad'
   },
   {
     id: 'rudn-enclave',
     developer: 'RUDN Group',
     name: 'RUDN Enclave',
     slug: 'rudn-enclave',
-    short_desc: 'Modern residential community with international standards and prime location',
+    type: 'Residential',
+    short_desc: 'Modern residential community with international standards and excellent amenities',
     meta_desc: 'RUDN Enclave - A modern residential development offering quality plots with excellent amenities and strategic location near Islamabad.',
     long_desc: `RUDN Enclave represents a modern approach to residential development, combining contemporary design with practical amenities. Located strategically near Islamabad, this development offers residents the perfect balance of urban convenience and peaceful suburban living.
 
-The project features well-planned residential blocks with modern infrastructure, including wide roads, proper drainage, electricity, gas, and water supply. RUDN Enclave is designed to cater to modern families' needs with parks, commercial areas, and community facilities.
-
-With its commitment to quality construction and timely delivery, RUDN Enclave has become a trusted name in real estate development. The project offers various plot sizes to accommodate different family needs and budgets, making it an attractive investment opportunity.`,
+The project features well-planned residential blocks with modern infrastructure, including wide roads, proper drainage, electricity, gas, and water supply. RUDN Enclave is designed to cater to modern families' needs with parks, commercial areas, and community facilities.`,
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&h=600&fit=crop&q=80',
-        source: 'turn2image0',
-        alt: 'RUDN Enclave entrance'
-      },
-      {
-        url: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&h=600&fit=crop&q=80',
-        source: 'turn2image2',
+        url: 'https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=600&h=400&fit=crop&crop=building',
+        source: 'rudn-enclave',
         alt: 'RUDN Enclave development'
-      },
-      {
-        url: 'https://images.unsplash.com/photo-1554995207-c18c203602cb?w=800&h=600&fit=crop&q=80',
-        source: 'turn2image5',
-        alt: 'RUDN Enclave infrastructure'
-      },
-      {
-        url: 'https://images.unsplash.com/photo-1596796971790-22aedaca2aba?w=800&h=600&fit=crop&q=80',
-        source: 'turn2image11',
-        alt: 'RUDN Enclave amenities'
       }
     ],
-    status: 'pre-launch',
-    plot_sizes: ['3 Marla', '5 Marla', '7 Marla', '10 Marla', '1 Kanal'],
+    status: 'development',
+    plot_sizes: ['5 Marla', '7 Marla', '10 Marla', '1 Kanal'],
     features: [
       'Modern Infrastructure',
       'Prime Location',
       'Quality Construction',
-      'Affordable Pricing',
-      'Easy Installments',
       'Community Parks',
       'Commercial Area',
       'Security System',
@@ -247,126 +170,44 @@ With its commitment to quality construction and timely delivery, RUDN Enclave ha
       plan: '#payment-plan'
     },
     map_coords: {
-      lat: 33.6844,
-      lng: 73.0479
+      lat: 33.5651,
+      lng: 73.1946
     },
     source_urls: [
-      'https://rudn.pk',
-      'https://rudnenclave.com'
+      'https://rudn.pk'
     ],
-    location: 'Ring Road, Islamabad',
-    city: 'Islamabad'
+    location: 'Ring Road, Rawalpindi',
+    city: 'Rawalpindi'
   },
   {
-    id: 'new-city-wah',
-    developer: 'New City Development',
-    name: 'New City Wah',
-    slug: 'new-city-wah',
-    short_desc: 'Emerging urban development with modern amenities in Wah Cantt',
-    meta_desc: 'New City Wah - A modern residential and commercial development in Wah Cantt offering quality plots with excellent connectivity.',
-    long_desc: `New City Wah is an emerging urban development that represents the future of modern living in Wah Cantt. This carefully planned community offers residents a blend of contemporary amenities and strategic location advantages.
+    id: 'new-city-paradise',
+    developer: 'New City Developers',
+    name: 'New City Paradise',
+    slug: 'new-city-paradise',
+    type: 'Residential',
+    short_desc: 'Contemporary residential project offering modern living with family-friendly environment',
+    meta_desc: 'New City Paradise - Modern residential plots with contemporary design and family-friendly amenities in Islamabad.',
+    long_desc: `New City Paradise offers contemporary residential living with modern design and family-friendly amenities. This development focuses on creating a peaceful community environment while providing easy access to urban facilities.
 
-The development features well-designed residential and commercial areas with modern infrastructure including wide roads, underground utilities, and comprehensive planning. New City Wah is positioned to become a major residential hub with easy access to major cities while maintaining its own identity.
-
-With competitive pricing and flexible payment plans, New City Wah offers an excellent opportunity for both end-users and investors. The project's phased development approach ensures steady growth and value appreciation over time.`,
+The project features well-planned residential blocks, green spaces, community parks, and modern infrastructure. With its strategic location and affordable pricing, New City Paradise represents an excellent investment opportunity for families and investors alike.`,
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1587041024648-3d1d3e3d8e73?w=800&h=600&fit=crop&q=80',
-        source: 'turn3image4',
-        alt: 'New City Wah master plan'
-      },
-      {
-        url: 'https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?w=800&h=600&fit=crop&q=80',
-        source: 'turn3image0',
-        alt: 'New City Wah development'
-      },
-      {
-        url: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop&q=80',
-        source: 'turn3image6',
-        alt: 'New City Wah infrastructure'
-      },
-      {
-        url: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800&h=600&fit=crop&q=80',
-        source: 'turn3image8',
-        alt: 'New City Wah amenities'
+        url: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&h=400&fit=crop&crop=building',
+        source: 'new-city-paradise',
+        alt: 'New City Paradise residential area'
       }
     ],
     status: 'development',
     plot_sizes: ['3 Marla', '5 Marla', '7 Marla', '10 Marla'],
     features: [
-      'Strategic Location',
-      'Modern Planning',
+      'Modern Design',
+      'Family Community',
+      'Green Spaces',
+      'Easy Access',
       'Affordable Pricing',
-      'Easy Accessibility',
-      'Commercial Areas',
-      'Residential Blocks',
-      'Infrastructure Development',
-      'Investment Opportunity',
-      'Flexible Payment',
-      'Growth Potential'
-    ],
-    cta_links: {
-      details: '/projects/new-city-wah',
-      book: '#contact',
-      plan: '#payment-plan'
-    },
-    map_coords: {
-      lat: 33.7976,
-      lng: 72.7369
-    },
-    source_urls: [
-      'https://newcitywah.com'
-    ],
-    location: 'Wah Cantt',
-    city: 'Wah'
-  },
-  {
-    id: 'new-city-paradise',
-    developer: 'New City Development',
-    name: 'New City Paradise',
-    slug: 'new-city-paradise',
-    short_desc: 'Premium residential development with luxury amenities and modern infrastructure',
-    meta_desc: 'New City Paradise - Premium residential development offering luxury plots with world-class amenities and modern infrastructure.',
-    long_desc: `New City Paradise elevates the standard of residential living with its premium development approach and luxury amenities. This exclusive community is designed for discerning families who appreciate quality, comfort, and modern conveniences.
-
-The development features spacious plots, wide boulevards, landscaped green areas, and premium infrastructure. Every aspect of New City Paradise is planned to provide residents with a superior living experience that combines luxury with functionality.
-
-With its focus on premium development and exclusive amenities, New City Paradise represents the pinnacle of modern residential living. The project offers various plot sizes to cater to different preferences while maintaining the highest standards throughout.`,
-    images: [
-      {
-        url: 'https://images.unsplash.com/photo-1605146769289-440113cc3d00?w=800&h=600&fit=crop&q=80',
-        source: 'turn3image11',
-        alt: 'New City Paradise entrance'
-      },
-      {
-        url: 'https://images.unsplash.com/photo-1628624747186-a941c476b7ef?w=800&h=600&fit=crop&q=80',
-        source: 'turn3image1',
-        alt: 'New City Paradise luxury development'
-      },
-      {
-        url: 'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&h=600&fit=crop&q=80',
-        source: 'turn3image3',
-        alt: 'New City Paradise amenities'
-      },
-      {
-        url: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop&q=80',
-        source: 'turn3image7',
-        alt: 'New City Paradise infrastructure'
-      }
-    ],
-    status: 'pre-launch',
-    plot_sizes: ['5 Marla', '7 Marla', '10 Marla', '1 Kanal'],
-    features: [
-      'Premium Development',
-      'Luxury Amenities',
-      'Spacious Plots',
-      'Landscaped Areas',
-      'Premium Infrastructure',
-      'Exclusive Community',
-      'Modern Planning',
-      'Quality Construction',
-      'Investment Value',
-      'Prestigious Location'
+      'Planned Infrastructure',
+      'Community Center',
+      'Playgrounds'
     ],
     cta_links: {
       details: '/projects/new-city-paradise',
@@ -374,62 +215,44 @@ With its focus on premium development and exclusive amenities, New City Paradise
       plan: '#payment-plan'
     },
     map_coords: {
-      lat: 33.7976,
-      lng: 72.7369
+      lat: 33.6293,
+      lng: 73.0112
     },
     source_urls: [
-      'https://newcityparadise.com'
+      'https://newcityparadise.pk'
     ],
-    location: 'Awami Block, Wah',
-    city: 'Wah'
+    location: 'Islamabad Highway, Islamabad',
+    city: 'Islamabad'
   },
   {
     id: 'faisal-town',
-    developer: 'Faisal Town Development',
+    developer: 'Faisal Town Developers',
     name: 'Faisal Town',
     slug: 'faisal-town',
-    short_desc: 'Established residential community with proven track record and excellent amenities',
-    meta_desc: 'Faisal Town - An established residential community offering quality plots with excellent amenities and proven development track record.',
-    long_desc: `Faisal Town is an established residential community that has built a strong reputation for quality development and reliable delivery. With years of successful development experience, Faisal Town continues to expand and improve its offerings to residents.
+    type: 'Residential',
+    short_desc: 'Established residential community with excellent connectivity and modern amenities',
+    meta_desc: 'Faisal Town - Well-established residential development with excellent connectivity and comprehensive amenities in Islamabad.',
+    long_desc: `Faisal Town is a well-established residential community known for its excellent connectivity and comprehensive amenities. Located in a prime area of Islamabad, this development offers residents easy access to major commercial centers, educational institutions, and healthcare facilities.
 
-The community features well-developed infrastructure, including paved roads, utilities, parks, and commercial areas. Faisal Town's commitment to maintaining high standards has made it a trusted choice for families seeking a reliable residential investment.
-
-With its proven track record and ongoing development, Faisal Town offers both established amenities and future growth potential. The community provides a stable and secure environment for families while offering good investment returns.`,
+The community features wide roads, proper utilities, parks, mosques, and commercial areas. With its mature infrastructure and strategic location, Faisal Town continues to be a preferred choice for families seeking quality residential options.`,
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1572120360610-d971b9d7767c?w=800&h=600&fit=crop&q=80',
-        source: 'turn4image6',
-        alt: 'Faisal Town residential area'
-      },
-      {
-        url: 'https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=800&h=600&fit=crop&q=80',
-        source: 'turn4image0',
-        alt: 'Faisal Town development'
-      },
-      {
-        url: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&h=600&fit=crop&q=80',
-        source: 'turn4image3',
-        alt: 'Faisal Town amenities'
-      },
-      {
-        url: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=600&fit=crop&q=80',
-        source: 'turn4image9',
-        alt: 'Faisal Town infrastructure'
+        url: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&h=400&fit=crop&crop=building',
+        source: 'faisal-town',
+        alt: 'Faisal Town community'
       }
     ],
-    status: 'available',
-    plot_sizes: ['3 Marla', '5 Marla', '7 Marla', '10 Marla', '1 Kanal'],
+    status: 'developed',
+    plot_sizes: ['5 Marla', '10 Marla', '1 Kanal'],
     features: [
-      'Established Community',
-      'Proven Track Record',
-      'Quality Infrastructure',
-      'Reliable Development',
-      'Commercial Areas',
+      'Excellent Connectivity',
+      'Mature Infrastructure',
+      'Commercial Centers',
       'Educational Facilities',
+      'Healthcare Access',
       'Parks & Recreation',
-      'Secure Investment',
-      'Family-Friendly',
-      'Growth Potential'
+      'Public Transport',
+      'Security Services'
     ],
     cta_links: {
       details: '/projects/faisal-town',
@@ -437,14 +260,104 @@ With its proven track record and ongoing development, Faisal Town offers both es
       plan: '#payment-plan'
     },
     map_coords: {
-      lat: 31.4504,
-      lng: 74.3587
+      lat: 33.6512,
+      lng: 73.1544
     },
     source_urls: [
-      'https://faisaltown.com'
+      'https://faisaltown.pk'
     ],
-    location: 'Multiple Blocks',
-    city: 'Lahore'
+    location: 'Faisal Town, Islamabad',
+    city: 'Islamabad'
+  },
+  {
+    id: 'blue-area-commercial',
+    developer: 'Various Developers',
+    name: 'Blue Area Commercial',
+    slug: 'blue-area-commercial',
+    type: 'Commercial',
+    short_desc: 'Prime commercial district with office buildings, shopping centers and business facilities',
+    meta_desc: 'Blue Area Commercial - Premier commercial district in Islamabad offering office spaces, retail outlets and business facilities.',
+    long_desc: `Blue Area is Islamabad's premier commercial district, housing the city's major business centers, corporate offices, shopping plazas, and commercial facilities. This central business district offers excellent investment opportunities in office spaces, retail outlets, and commercial properties.
+
+Located in the heart of Islamabad, Blue Area provides easy access to government offices, embassies, and major institutions. The area features modern office buildings, shopping centers, restaurants, and hotels, making it the ideal location for businesses and commercial investments.`,
+    images: [
+      {
+        url: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=400&fit=crop&crop=building',
+        source: 'blue-area',
+        alt: 'Blue Area commercial district'
+      }
+    ],
+    status: 'developed',
+    plot_sizes: ['Commercial Plots', 'Office Spaces', 'Retail Outlets'],
+    features: [
+      'Central Business District',
+      'Government Proximity',
+      'Embassy Area',
+      'Shopping Centers',
+      'Office Buildings',
+      'Hotels & Restaurants',
+      'Banking Facilities',
+      'Public Transport Hub'
+    ],
+    cta_links: {
+      details: '/projects/blue-area-commercial',
+      book: '#contact',
+      plan: '#payment-plan'
+    },
+    map_coords: {
+      lat: 33.7294,
+      lng: 73.0936
+    },
+    source_urls: [
+      'https://islamabad.gov.pk'
+    ],
+    location: 'Blue Area, Islamabad',
+    city: 'Islamabad'
+  },
+  {
+    id: 'commercial-market-rawalpindi',
+    developer: 'Multiple Developers',
+    name: 'Commercial Market Rawalpindi',
+    slug: 'commercial-market-rawalpindi',
+    type: 'Commercial',
+    short_desc: 'Established commercial markets and business centers in prime locations of Rawalpindi',
+    meta_desc: 'Commercial Market Rawalpindi - Prime commercial properties including markets, shops and business centers in established locations.',
+    long_desc: `Rawalpindi's commercial markets offer excellent business opportunities in established commercial areas. These markets include shopping plazas, retail shops, office spaces, and business centers located in prime commercial districts of the city.
+
+With excellent connectivity to major roads, residential areas, and transportation hubs, these commercial properties provide ideal locations for various business ventures. The areas feature mature infrastructure, banking facilities, and established customer bases.`,
+    images: [
+      {
+        url: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=400&fit=crop&crop=building',
+        source: 'commercial-rawalpindi',
+        alt: 'Commercial Market Rawalpindi'
+      }
+    ],
+    status: 'developed',
+    plot_sizes: ['Shops', 'Plazas', 'Office Spaces', 'Warehouses'],
+    features: [
+      'Established Markets',
+      'Prime Locations',
+      'High Footfall',
+      'Transportation Access',
+      'Banking Facilities',
+      'Parking Available',
+      'Security Services',
+      'Utility Connections'
+    ],
+    cta_links: {
+      details: '/projects/commercial-market-rawalpindi',
+      book: '#contact',
+      plan: '#payment-plan'
+    },
+    map_coords: {
+      lat: 33.5969,
+      lng: 73.0668
+    },
+    source_urls: [
+      'https://rawalpindi.gov.pk'
+    ],
+    location: 'Various Commercial Areas, Rawalpindi',
+    city: 'Rawalpindi'
   }
 ];
 
@@ -455,40 +368,54 @@ export const companyProfileData: CompanyProfile = {
   ceo: {
     name: 'Waheed ur Rehman Farooqui',
     title: 'Chief Executive Officer',
-    bio: 'Waheed ur Rehman Farooqui, CEO of Excel Marketing Pvt Ltd, leads a specialized team in property management, sales, marketing, and leasing. The company is dedicated to exceptional results, seamless transactions, and building long-term relationships with property owners, tenants, and buyers.',
+    bio: 'Waheed ur Rehman Farooqui, CEO of Excel Marketing Pvt Ltd, leads a specialized team in property management, sales, marketing, and leasing. The company is dedicated to exceptional results, seamless transactions, and building long-term relationships with property owners, tenants, and buyers in Islamabad and Rawalpindi.',
     image: '/src/assets/team/ceo-placeholder.jpg'
   },
   contact: {
     phone: '03348737244',
-    email: 'waheedfarooki@gmail.com'
+    email: 'excelmarketingpk@gmail.com' // Updated email
   },
   team: [
     {
       name: 'Qaiser ul Haq',
       role: 'Director Sales',
+      description: 'Leads our sales operations with over 15 years of experience.\nSpecializes in property transactions and client relationship management.',
       image: '/src/assets/team/director-sales-placeholder.jpg'
     },
     {
       name: 'Farooq Sultan',
       role: 'Director Marketing',
+      description: 'Oversees marketing strategies and digital presence.\nExpert in real estate promotion and brand development.',
       image: '/src/assets/team/director-marketing-placeholder.jpg'
     },
     {
       name: 'Ashraf Nazir',
       role: 'Director Legal',
+      description: 'Handles all legal aspects of property transactions.\nEnsures compliance and provides legal consultation services.',
       image: '/src/assets/team/director-legal-placeholder.jpg'
     },
     {
       name: 'Abdullah Farooqui',
       role: 'Director Technical',
+      description: 'Manages technical operations and development projects.\nOversees construction and infrastructure planning.',
       image: '/src/assets/team/director-technical-placeholder.jpg'
     }
   ],
   services: [
-    'Deliver high-quality residential and commercial properties',
-    'Maximize client satisfaction and investment value',
-    'Build long-term trust through transparency and service',
-    'Innovate in property solutions and market strategies',
-    'Ensure sustainable growth and strong market presence'
+    'Buying and selling of property in Islamabad & Rawalpindi',
+    'Legal consultancy and verification services',
+    'Possession, cases, and rental agreements',
+    'Guidance for overseas Pakistanis regarding property transactions',
+    'Construction and development services with complete delivery',
+    'Pre-sale and post-sale comprehensive support services'
+  ],
+  specialFeatures: [
+    'Legal verification of property ownership',
+    '3 days and daily updates on transactions',
+    'Pre-sale and post-sale services',
+    'Complete ownership and transfer guarantee',
+    'Construction and development services with complete delivery',
+    'Reliable and authentic societies in Islamabad & Rawalpindi only',
+    'Comprehensive guidance about investment opportunities'
   ]
 };

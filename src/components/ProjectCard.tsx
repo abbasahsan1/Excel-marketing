@@ -37,7 +37,7 @@ const ProjectCard = ({ project, className = '' }: ProjectCardProps) => {
 
   return (
     <Card 
-      className={`group hover:shadow-elevated transition-smooth overflow-hidden border-0 bg-background ${className}`}
+      className={`group hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-200 bg-white ${className}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -46,27 +46,37 @@ const ProjectCard = ({ project, className = '' }: ProjectCardProps) => {
         <img
           src={project.images[currentImageIndex]?.url || project.images[0]?.url}
           alt={project.images[currentImageIndex]?.alt || project.name}
-          className="w-full h-full object-cover group-hover:scale-105 transition-smooth"
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
           loading="lazy"
         />
         
-        {/* Status Badge */}
+        {/* Property Type Badge */}
         <div className="absolute top-4 left-4">
+          <Badge 
+            variant={project.type === 'Commercial' ? 'destructive' : 'default'} 
+            className="shadow-sm font-semibold"
+          >
+            {project.type}
+          </Badge>
+        </div>
+
+        {/* Status Badge */}
+        <div className="absolute top-4 right-4">
           <Badge variant={getStatusColor(project.status)} className="shadow-sm">
             {getStatusLabel(project.status)}
           </Badge>
         </div>
 
-        {/* Location Badge */}
-        <div className="absolute top-4 right-4">
-          <Badge variant="secondary" className="shadow-sm bg-background/90 backdrop-blur-sm">
+        {/* City Badge */}
+        <div className="absolute bottom-4 right-4">
+          <Badge variant="secondary" className="shadow-sm bg-white/90 backdrop-blur-sm text-gray-700">
             {project.city}
           </Badge>
         </div>
 
         {/* Mini Carousel on Hover */}
         {isHovered && project.images.length > 1 && (
-          <div className="absolute bottom-4 left-4 right-4">
+          <div className="absolute bottom-4 left-4 right-16">
             <div className="flex space-x-2 justify-center">
               {project.images.map((_, index) => (
                 <button
@@ -83,47 +93,41 @@ const ProjectCard = ({ project, className = '' }: ProjectCardProps) => {
             </div>
           </div>
         )}
-
-        {/* View Count Badge */}
-        <div className="absolute bottom-4 right-4 bg-background/90 backdrop-blur-sm rounded-full px-3 py-1 flex items-center space-x-1">
-          <Eye className="h-3 w-3" />
-          <span className="text-xs font-medium">120+ Properties</span>
-        </div>
       </div>
 
       <CardContent className="p-6">
         {/* Project Details */}
         <div className="mb-4">
-          <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-smooth">
+          <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
             {project.name}
           </h3>
-          <div className="flex items-center text-muted-foreground mb-3">
+          <div className="flex items-center text-gray-600 mb-3">
             <MapPin className="h-4 w-4 mr-1" />
-            <span className="text-sm">{project.location}</span>
+            <span className="text-sm font-medium">{project.location}</span>
           </div>
-          <p className="text-sm text-muted-foreground line-clamp-2">
+          <p className="text-sm text-gray-600 line-clamp-2 leading-relaxed">
             {project.short_desc}
           </p>
         </div>
 
         {/* Developer */}
         <div className="mb-4">
-          <Badge variant="outline" className="text-xs">
+          <Badge variant="outline" className="text-xs border-gray-300 text-gray-600">
             {project.developer}
           </Badge>
         </div>
 
         {/* Plot Sizes Preview */}
         <div className="mb-6">
-          <div className="text-xs text-muted-foreground mb-2">Available Sizes:</div>
+          <div className="text-xs text-gray-500 mb-2 font-medium">Available Sizes:</div>
           <div className="flex flex-wrap gap-1">
             {project.plot_sizes.slice(0, 3).map((size, index) => (
-              <Badge key={index} variant="secondary" className="text-xs">
+              <Badge key={index} variant="secondary" className="text-xs bg-gray-100 text-gray-700">
                 {size}
               </Badge>
             ))}
             {project.plot_sizes.length > 3 && (
-              <Badge variant="secondary" className="text-xs">
+              <Badge variant="secondary" className="text-xs bg-gray-100 text-gray-700">
                 +{project.plot_sizes.length - 3} more
               </Badge>
             )}
@@ -132,8 +136,8 @@ const ProjectCard = ({ project, className = '' }: ProjectCardProps) => {
 
         {/* Action Button */}
         <Link to={`/projects/${project.slug}`}>
-          <Button variant="outline" className="w-full group/btn">
-            Explore Project
+          <Button variant="outline" className="w-full group/btn border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white">
+            View Details
             <ArrowRight className="h-4 w-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
           </Button>
         </Link>

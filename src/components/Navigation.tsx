@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Search, Phone } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 const Navigation = () => {
@@ -9,8 +9,6 @@ const Navigation = () => {
 
   const navItems = [
     { label: "Projects", href: "/projects" },
-    { label: "Residential", href: "/residential" },
-    { label: "Commercial", href: "/commercial" },
     { label: "Company Profile", href: "/company-profile" },
     { label: "Contact", href: "/contact" },
   ];
@@ -35,10 +33,10 @@ const Navigation = () => {
               <Link
                 key={item.href}
                 to={item.href}
-                className={`text-sm font-medium transition-smooth hover:text-primary ${
+                className={`text-sm font-medium transition-all duration-200 px-3 py-2 rounded-md ${
                   isActive(item.href)
-                    ? "text-primary"
-                    : "text-muted-foreground"
+                    ? "text-white bg-blue-600 font-semibold"
+                    : "text-gray-700 hover:text-white hover:bg-blue-600 font-medium"
                 }`}
               >
                 {item.label}
@@ -48,13 +46,6 @@ const Navigation = () => {
 
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost" size="icon">
-              <Search className="h-4 w-4" />
-            </Button>
-            <a href="tel:+1234567890" className="flex items-center space-x-2 text-muted-foreground hover:text-primary transition-smooth">
-              <Phone className="h-4 w-4" />
-              <span className="text-sm font-medium">Call Us</span>
-            </a>
             <Button variant="hero" size="sm">
               Get Started
             </Button>
@@ -80,10 +71,10 @@ const Navigation = () => {
                 <Link
                   key={item.href}
                   to={item.href}
-                  className={`block px-3 py-2 text-base font-medium transition-smooth hover:text-primary hover:bg-accent rounded-md ${
+                  className={`block px-3 py-2 text-base font-medium transition-all duration-200 rounded-md ${
                     isActive(item.href)
-                      ? "text-primary bg-accent"
-                      : "text-muted-foreground"
+                      ? "text-white bg-blue-600 font-semibold"
+                      : "text-gray-700 hover:text-white hover:bg-blue-600 font-medium"
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -91,10 +82,6 @@ const Navigation = () => {
                 </Link>
               ))}
               <div className="pt-4 space-y-2">
-                <Button variant="outline" className="w-full">
-                  <Phone className="h-4 w-4 mr-2" />
-                  Call Us
-                </Button>
                 <Button variant="hero" className="w-full">
                   Get Started
                 </Button>

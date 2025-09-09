@@ -20,11 +20,12 @@ export interface Project {
   developer: string;
   name: string;
   slug: string;
+  type: 'Residential' | 'Commercial'; // Added property type
   short_desc: string;
   meta_desc: string;
   long_desc: string;
   images: ProjectImage[];
-  status: 'pre-launch' | 'development' | 'available' | 'sold-out';
+  status: 'pre-launch' | 'development' | 'available' | 'sold-out' | 'developed';
   plot_sizes: string[];
   features: string[];
   cta_links: CTALinks;
@@ -51,7 +52,9 @@ export interface CompanyProfile {
   team: Array<{
     name: string;
     role: string;
+    description?: string;
     image?: string;
   }>;
   services: string[];
+  specialFeatures?: string[];
 }

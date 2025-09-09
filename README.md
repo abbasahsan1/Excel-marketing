@@ -1,13 +1,33 @@
 # Excel Marketing Pvt Ltd - Project Showcase
 
-A modern, responsive real estate project showcase website built with React, TypeScript, and Tailwind CSS.
+A modern, responsive real estate website specializing exclusively in **Islamabad and Rawalpindi** properties, built with React, TypeScript, and Tailwind CSS.
 
-## 🚀 Features
+## 🎯 Our Focus
 
-- **Project Portfolio**: Comprehensive project listings with image carousels
+**Excel Marketing Pvt Ltd** operates exclusively in **Islamabad and Rawalpindi**, providing:
+
+- ✅ Complete solution for real estate and property-related matters
+- ✅ Buying and selling of property 
+- ✅ Legal consultancy and verification services
+- ✅ Possession, cases, and rental agreements
+- ✅ Guidance for overseas Pakistanis regarding property transactions
+- ✅ Construction and development services with complete delivery
+
+### Special Features
+- Legal verification of property ownership
+- 3 days and daily updates on transactions
+- Pre-sale and post-sale services
+- Complete ownership and transfer guarantee
+- Reliable and authentic societies in Islamabad & Rawalpindi only
+- Comprehensive guidance about investment opportunities
+
+## 🚀 Website Features
+
+- **Islamabad & Rawalpindi Projects**: Focused project listings in our target markets
 - **Project Detail Pages**: Individual pages for each project with full information
-- **Featured Locations Widget**: Showcase of top properties by city
-- **Company Profile**: Complete company information and team details
+- **Islamabad & Rawalpindi Locations**: Showcase of premium properties in target cities
+- **Company Profile**: Complete company information with CEO and team details
+- **Services Portfolio**: Comprehensive real estate services for Islamabad & Rawalpindi
 - **Responsive Design**: Mobile-first, responsive design
 - **SEO Optimized**: Dynamic meta tags and semantic HTML
 - **Performance Optimized**: Lazy loading, image optimization
@@ -163,7 +183,7 @@ npm run test
 Create `.env.local`:
 ```
 VITE_API_URL=your_api_url
-VITE_CONTACT_EMAIL=waheedfarooki@gmail.com
+VITE_CONTACT_EMAIL=excelmarketingpk@gmail.com
 VITE_CONTACT_PHONE=03348737244
 ```
 
@@ -174,7 +194,7 @@ Edit `vite.config.ts` for build customization.
 
 **Excel Marketing Pvt Ltd**
 - Phone: 03348737244
-- Email: waheedfarooki@gmail.com
+- Email: excelmarketingpk@gmail.com
 - CEO: Waheed ur Rehman Farooqui
 
 ## 🤝 Contributing

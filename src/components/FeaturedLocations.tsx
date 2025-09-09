@@ -6,17 +6,17 @@ const FeaturedLocations = () => {
   const locations = [
     {
       id: 1,
-      title: "Murree Resorts",
-      subtitle: "Hill Station & Resort Destination",
-      location: "Murree",
-      image: "https://images.unsplash.com/photo-1610641818989-c2051b5e2cfd?w=500&h=300&fit=crop",
+      title: "DHA Islamabad",
+      subtitle: "Premium Gated Community",
+      location: "Islamabad",
+      image: "https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=500&h=300&fit=crop",
       featured: true
     },
     {
       id: 2,
-      title: "Warraich Tower",
-      subtitle: "Commercial & Residential Zone",
-      location: "New City Wah",
+      title: "Bahria Town Rawalpindi",
+      subtitle: "Luxury Residential Complex",
+      location: "Rawalpindi",
       image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=500&h=300&fit=crop",
       featured: true
     },
@@ -30,9 +30,9 @@ const FeaturedLocations = () => {
     },
     {
       id: 4,
-      title: "Park View City",
-      subtitle: "CDA-Approved Modern Housing Society",
-      location: "Islamabad",
+      title: "RUDN Enclave",
+      subtitle: "Modern Residential Development",
+      location: "Rawalpindi",
       image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=500&h=300&fit=crop",
       featured: true
     }
@@ -47,10 +47,10 @@ const FeaturedLocations = () => {
             Prime Locations
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Featured Locations
+            Islamabad & Rawalpindi Properties
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Discover our carefully selected premium locations across Pakistan
+            Discover our carefully selected premium properties exclusively in Islamabad and Rawalpindi
           </p>
         </div>
 
